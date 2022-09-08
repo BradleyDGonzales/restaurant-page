@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'Ninja Naruto Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Ninja Naruto Regular'), url('./ninja-naruto.regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'anime_aceregular';
+    src: url('anime-ace.regular-webfont.woff2') format('woff2'),
+        url('anime-ace.regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #fb923c
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #404040;
+    padding: 16px;
+    font-family: 'Ninja Naruto Regular';
+    color: #f1f5f9;
+}
+
+header li {
+    display: flex;
+    list-style: none;
+    padding-right: 32px;
+    font-size: 1.3em;
+}
+
+header p {
+    padding-left: 32px;
+    font-size: 2em;
+}
+
+#greeting {
+    display: flex;
+    flex-direction: column;
+    font-family: anime_aceregular;
+    justify-content: center;
+    align-items: center;
+}
+
+#about {
+    padding-top: 16px;
+    width: 650px;
+    text-align: center;
+}
+
+#restaurant-name {
+    letter-spacing: 3px;
+}
+
+#vision {
+    padding: 12px;
+}
+
+footer {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    height: 4em;
+    background-color: #404040;
+    font-family: anime_aceregular;
+    color: #f1f5f9;
+    font-weight: 900;
+}
+
+a {
+    color: #f1f5f9;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: #fb923c;
+}
+
+#services {
+    display: flex;
+    margin-top: 32px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: anime_aceregular;
+}
+
+.deliveryservices {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+#main {
+    padding: 16px;
+}
+
+#maincontact,
+#mainmenu {
+    display: grid;
+    justify-content: center;
+    padding: 12px;
+    font-family: anime_aceregular;
+}
+
+#vision,
+#contact,
+#menu {
+    display: flex;
+    justify-content: center;
+    background-color: #404040;
+    color: #f1f5f9;
+    padding: 16px;
+    border-radius: 12px;
+    width: 180px;
+}
+
+#foods {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 64px;
+    column-gap: 64px;
+}
+
+#vision-title,
+#contact-title,
+#menu-title {
+    display: grid;
+    justify-content: center;
+    padding: 12px;
+}
+
+.foodoptions {
+    border-radius: 20%;
+}
+
+.imgcaption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 16px;
+    text-align: center;
+}
+
+#staff {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: auto;
+    grid-auto-rows: auto;
+    row-gap: 32px;
+    column-gap: 32px;
+}
+
+.staffsContainer {
+    display: flex;
+    align-items: center;
+    background-color: #404040;
+    color: #f1f5f9;
+    padding: 16px;
+    border-radius: 12px;
+}
+
+.staffsContainer:nth-child(5) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1 / span 2;
+}
